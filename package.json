@@ -1,0 +1,11 @@
+{
+  "name": "task-7",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "json-server --watch data.json"
+  },
+  "dependencies": {
+    "json-server": "^0.17.0"
+  }
+}

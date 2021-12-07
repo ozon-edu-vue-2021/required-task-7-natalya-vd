@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,33 +9,38 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Тестовое задание</title>
 </head>
+
 <body>
-  <div id="container">
-    <div class="list-view">
-      <ul class="contacts-list">
-        <li>
-          <strong>Павел</strong>
+  <div class="view" id="app">
+    <div class="view__details hide">
+      <div class="view__details-inner">
+        <button class="view__details-back" id="back"></button>
+        <p class="view__details-title" id="name"></p>
+      </div>
+      <ul>
+        <li class="view__details-people">
+          <p class="view__details-people-title">
+            Друзья
+          </p>
+          <ul id="friends"></ul>
+        </li>
+        <li class="view__details-people">
+          <p class="view__details-people-title">
+            Не в друзьях
+          </p>
+          <ul id="notFriends"></ul>
+        </li>
+        <li class="view__details-people">
+          <p class="view__details-people-title">
+            Популярные люди
+          </p>
+          <ul id="top"></ul>
         </li>
       </ul>
     </div>
-    <div class="details-view">
-      <div class="back"></div>
-      <div class="background"></div>
-      <div><ul>
-        <li class="people-title">Друзья</li>
-        <li><i class="fa fa-male"></i><span >Иван</span></li>
-        <li><i class="fa fa-male"></i><span >Максим</span></li>
-        <li><i class="fa fa-male"></i><span >Марат</span></li>
-        <li class="people-title">Не в друзьях</li>
-        <li><i class="fa fa-male"></i><span >Вася</span></li>
-        <li><i class="fa fa-male"></i><span >Кирилл</span></li>
-        <li><i class="fa fa-male"></i><span >Степан</span></li>
-        <li class="people-title">Популярные люди</li>
-        <li><i class="fa fa-male"></i><span >Елена</span></li>
-        <li><i class="fa fa-male"></i><span >Оля</span></li>
-        <li><i class="fa fa-male"></i><span >Никита</span></li>
-      </ul></div>
-    </div>
   </div>
+
+  <script src="./js/script.js"></script>
 </body>
+
 </html>
